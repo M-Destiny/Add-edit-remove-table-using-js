@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data table</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container text-center text-capitalize">
+        <h1>Data Table</h1>
+        <p class="tp"><span class="n">NOTE</span> :To EDit or remove data click on the data row and edit or delete </p>
+    </div>
+    <div class="container mt-4">
+
+
+        <input type="text" id="fname" class="form-control" placeholder="Name"> <br>
+        <input type="text" id="lname" class="form-control" placeholder="Surname"> <br>
+        <input type="number" id="age" class="form-control" placeholder="Age"> <br>
+
+
+        <button class="btn btn-primary" onclick="addHtmlTableRow();">Add</button>
+        <button class="btn btn-warning" onclick="editHtmlTbleSelectedRow();">Edit</button>
+        <button class="btn btn-danger" onclick="removeSelectedRow();">Remove</button>
+        <table class="table table-hover" id="table">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+        </table>
+        <footer class="text-center ft">
+            &copy;MADE with <i class="fa-regular fa-heart ic"></i> by <a href="https://github.com/M-Destiny">Destiny</a>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
+
+<style>
+    #table {
+        cursor: pointer;
+    }
+
+    .n {
+        color: red;
+        font-weight: 600;
+    }
+
+    .ft a {
+        text-decoration: none;
+        color: chocolate;
+    }
+
+    .ft a:hover {
+        color: palevioletred;
+    }
+
+    .ft {
+        padding-top: 12rem;
+        font-size: 16px;
+    }
+
+    .ic {
+        color: red;
+    }
+</style>
